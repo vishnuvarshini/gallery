@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		
+	<style>
+	div{
+		position:absolute;
+		width:500px;
+		height:500px;
+		background-color:;
+		left:40%;
+		top:30%;
+	}
+	</style>
+</head>
+<body>
+	<ul style="list-style-type:none">
+		<li><a href="#"><img  src="f5.jpg" style="width:250px;height:250px" id="1" onclick="showImage('f5.jpg')"></a></li>
+		<li><a href="#"><img  src="f9.jpg" style="width:250px;height:250px" id="2" onclick="showImage('f9.jpg')"></a></li>
+		<li><a href="#"><img  src="f13.jpg" style="width:250px;height:250px" id="3" onclick="showImage('f13.jpg')"></a></li>
+		<li><a href="#"><img  src="f12.jpg" style="width:250px;height:250px" id="4" onclick="showImage('f12.jpg')"></a></li>
+	</ul>
+	<div id="bigimage">
+		<img id="largeImage" src="">
+	</div>
+	<script type="text/javascript">
+		function showImage(a)
+		{
+			console.log(a,'a')
+			document.getElementById("largeImage").src=a;
+		}
+	</script>
+</body>
+</html>
